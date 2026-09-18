@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 1561929966}
   - component: {fileID: 1561929968}
   - component: {fileID: 1561929969}
-  - component: {fileID: 1561929970}
+  - component: {fileID: 1561929971}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -662,9 +662,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52baaf2c7d2fb544b99a157a0072f12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::grid_placement
-  grid_size: 1
-  thing_to_place: {fileID: 8984313547487010018, guid: f771b2703504edc42a689e2397eb4bf8, type: 3}
-  things_to_place: []
+  grid: {fileID: 865644223}
+  tilemap: {fileID: 1207918437}
+  tile: {fileID: 11400000, guid: 35325922a77fe2b4395475a5b0f4b86c, type: 2}
+  tile_Entries:
+  - type: 0
+    tiles:
+    - {fileID: 11400000, guid: 6364a6976aa01214c8381d04170b6900, type: 2}
+    - {fileID: 11400000, guid: 1b5d2cccfa12bdd47a35aa35f5cc001d, type: 2}
+    - {fileID: 11400000, guid: 6e5567f1e6e5d6645941fe3740840573, type: 2}
+    - {fileID: 11400000, guid: c6d7ee6f00474d444a02641175ba09b2, type: 2}
+    - {fileID: 11400000, guid: 0ea1794398486a04798a9c64a1bc2d51, type: 2}
+    - {fileID: 11400000, guid: 0665432eb9d264c4a852c7fc6783b387, type: 2}
+    - {fileID: 11400000, guid: dfb731dfc5ef7424a8442bfbb65632be, type: 2}
+    - {fileID: 11400000, guid: 885ff143a61620945994006ea5eac598, type: 2}
+    - {fileID: 11400000, guid: b42769cdec847a547bf8b8687804516e, type: 2}
+    - {fileID: 11400000, guid: 779d909d6e497aa4bba73174760abe16, type: 2}
+    - {fileID: 11400000, guid: 31ee92db76e134b41b1d83727841417f, type: 2}
+    - {fileID: 11400000, guid: d74a96db3e7d83945a44d3170fd005ab, type: 2}
+    - {fileID: 11400000, guid: b252751158788114ab20497378abcf5f, type: 2}
+    - {fileID: 11400000, guid: 1791b91be8621ea4987780f4c8ff60d1, type: 2}
+    - {fileID: 11400000, guid: f4e3bec188dbc8744abe0b6ebf1cbaa6, type: 2}
+    - {fileID: 11400000, guid: 6ebcee2cf51a8eb4d9bb9fbcde8d7f0e, type: 2}
+  - type: 1
+    tiles:
+    - {fileID: 11400000, guid: 35325922a77fe2b4395475a5b0f4b86c, type: 2}
 --- !u!114 &1561929969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f72a6d32dda0a47a0f3d1c7445d09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouvement
---- !u!114 &1561929970
+--- !u!114 &1561929971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -686,10 +708,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1561929965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95e3d602ac84b1e4eac122a10882c312, type: 3}
+  m_Script: {fileID: 11500000, guid: 77a4d1c03afa43d42891857b665162bf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::tile_type
-  tile_Entries: []
+  m_EditorClassIdentifier: Assembly-CSharp::bits_test
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

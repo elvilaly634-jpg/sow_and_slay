@@ -1,24 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Tilemaps;
 
 public enum Tile_Type
 {
+    soil,
     grass,
-    water,
-    sand
+    
+    
+    empty
 }
 
 [System.Serializable]
 public class tile_entry
 {
-    public Tile_Type tile;
-    public int sprite;
-    public tile_entry(Tile_Type tile,int sprite)
-    {
-        this.tile=tile;
-        this.sprite=sprite;
-    }
+    public Tile_Type type;
+    public List<Tile> tiles=new List<Tile>();
+
 }
 // public class Player
 // {
@@ -73,13 +71,13 @@ public class tile_type : MonoBehaviour
             
         // }
         
-        tile_Entries.Add(new tile_entry(Tile_Type.grass,1));
-        tile_Entries.Add(new tile_entry(Tile_Type.sand,10));
+        
+        
 
-        foreach(tile_entry entry in tile_Entries)
-        {
-            Debug.Log(entry.tile+" , "+entry.sprite);
-        }
+        // foreach(tile_entry entry in tile_Entries)
+        // {
+        //     Debug.Log(entry.tile+" , "+entry.sprite);
+        // }
 
 
     }
